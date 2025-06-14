@@ -19,9 +19,9 @@ jobs:
       with:
         node-version: 20
         cache: 'npm'
-    - name: install dependencies
+    - name: Install dependencies
       run: npm install
-    - name: install PlayWritght browsers
+    - name: Install Playwright browsers
       run: npx playwright install
     - name: Start Backend
       run: npm run start-backend &
