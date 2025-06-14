@@ -23,6 +23,7 @@ jobs:
       run: npm install
     - name: Install Playwright browsers
       run: npx playwright install
+      continue-on-error: false
     - name: Start Backend
       run: npm run start-backend &
     - name: Start Frontend
