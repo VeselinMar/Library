@@ -22,7 +22,7 @@ jobs:
     - name: install dependencies
       run: npm install
     - name: install PlayWritght browsers
-      run: npm playwritght install
+      run: npx playwright install
     - name: Start Backend
       run: npm run start-backend &
     - name: Start Frontend
