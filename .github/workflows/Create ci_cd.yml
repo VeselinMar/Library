@@ -38,7 +38,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy on Production
-        uses: JorgeNLJunior/render-deploy@v1.4.5
+        uses: JorgeLNJunior/render-deploy@v1.4.5
         with:
           service_id: ${{ secrets.Y_RENDER_BE_SERVICE_ID }}
           api_key: ${{ secrets.MY_RENDER_API_KEY }}
@@ -50,7 +50,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy on Production
-        uses: JorgeNLJunior/render-deploy@v1.4.5
+        uses: JorgeLNJunior/render-deploy@v1.4.5
         with:
           service_id: ${{ secrets.MY_RENDER_FE_SERVICE_ID }}
           api_key: ${{ secrets.MY_RENDER_API_KEY }}
